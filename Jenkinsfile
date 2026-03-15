@@ -9,12 +9,6 @@ pipeline {
 
     stages {
 
-        stage('Clone Repository') {
-            steps {
-                git https://github.com/samarthfunde/Automated-Docker-Image-Deployment-to-Amazon-ECR-with-Jenkins-Lambda-Integration.git'
-            }
-        }
-
         stage('Build Docker Image') {
             steps {
                 sh 'docker build -t myapp:$IMAGE_TAG .'
@@ -46,6 +40,5 @@ pipeline {
                 '''
             }
         }
-
     }
 }
