@@ -11,7 +11,7 @@ pipeline {
 
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/YOUR_USERNAME/YOUR_REPO.git'
+                git 'https://github.com/samarthfunde/https://github.com/samarthfunde/Automated-Docker-Image-Deployment-to-Amazon-ECR-with-Jenkins-Lambda-Integration.git'
             }
         }
 
