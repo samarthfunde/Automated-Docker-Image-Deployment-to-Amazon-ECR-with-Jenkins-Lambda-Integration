@@ -10,6 +10,8 @@ This project automates the process of building a Docker image, pushing it to Ama
 
 The pipeline works like this: a developer pushes code to GitHub, Jenkins detects the change via a webhook, builds a Docker image, and pushes it to Amazon ECR. When the image lands in ECR, EventBridge picks up the event and triggers a Lambda function that sends an email notification via SNS and writes a log entry to DynamoDB.
 
+
+
 ---
 
 ## Step 1 — Create the Main DevOps EC2 Server
